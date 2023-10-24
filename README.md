@@ -1,5 +1,5 @@
 # millerclapperton.github.io
-## *MillerClapperton Documentation**
+## MillerClapperton Documentation
 
 ### SOP AND MANUALS
 - [CNC Programmer SOP](CNCProgrammerSOP.md)
