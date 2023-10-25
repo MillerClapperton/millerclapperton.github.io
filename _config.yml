@@ -1,4 +1,5 @@
 theme: minima
+logo: /assets/images/logo.png
 title: Documentation - main page
 description: Official company documentations
 markdown: kramdown
