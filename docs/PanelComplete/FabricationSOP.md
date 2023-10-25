@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Fabrication SOP
 #permalink: /PanelComplete/Fabrication SOP/
 ---

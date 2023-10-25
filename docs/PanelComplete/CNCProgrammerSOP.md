@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: CNC Programmer SOP
 #permalink: /PanelComplete/CNC Programmer SOP/
 ---
