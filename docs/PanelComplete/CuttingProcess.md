@@ -59,7 +59,7 @@ PanelComplete
 
 - Click “Stop/Unload Material” to interrupt a job before it is completely finished
 - This releases the task from the machine
-    - DO THIS ONLY IF MATERIAL IS NOT DAMAGED!!!
+    - <span style="color: red">DO THIS ONLY IF MATERIAL IS NOT DAMAGED!!!</span>
 
 ![Picture8](images/Picture8.png)
 
@@ -121,4 +121,4 @@ PanelComplete
 - Slow down and go by the manual. This will make the program and process go smoothly
 - If material has not been properly laid out and reserved in the program correctly, once completed you will NOT have the opportunity to add more.
 - Done tasks will show at the bottom of the task list
-- DO NOT RUSH THROUGH THE PROGRAM PROCESS!!
+- <span style="color: red">DO NOT RUSH THROUGH THE PROGRAM PROCESS!!</span>
