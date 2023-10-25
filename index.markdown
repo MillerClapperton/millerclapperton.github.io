@@ -3,11 +3,21 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+sop_pages:
+  - title: "CNC Programmer SOP"
+    path: "docs/PanelComplete/CNCProgrammerSOP"
+  - title: "Cutting Process"
+    path: "docs/PanelComplete/CuttingProcess"
+  - title: "Cutting SOP"
+    path: "docs/PanelComplete/CuttingSOP"
+  - title: "Fabrication SOP"
+    path: "docs/PanelComplete/FabricationSOP"
 ---
+
+
 ## MillerClapperton Navigation
 
 ### SOP AND MANUALS
-- [CNC Programmer SOP](CNC Programmer SOP)
-- [Cutting Process](Cutting Process)
-- [Cutting SOP](Cutting SOP)
-- [Fabrication SOP](Fabrication SOP)
+{%- for page in site.sop_pages -%}
+- [{{ page.title }}]({{ site.baseurl }}/{{ page.path }})
+{%- endfor -%}

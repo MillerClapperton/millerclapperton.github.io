@@ -4,7 +4,41 @@ title: Cutting Process
 #permalink: /PanelComplete/Cutting Process/
 ---
 
-## Login:
+<style>
+/* styles.css */
+#markdown-toc {
+    background-color: #f8ffef; /* светло-зеленый фон */
+    border: 1px solid #ccc; /* серая рамка */
+    padding: 1em; /* внутренний отступ */
+    margin: 1em 0; /* внешний отступ сверху и снизу */
+    border-radius: 8px; /* закругленные углы */
+    list-style: none;
+}
+#markdown-toc li {
+    margin: 0; /* убирает отступы у списка */
+    
+}
+
+#markdown-toc:before{
+    content: 'Outlines';
+    color: yellowgreen;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.e-content{
+  
+}
+</style>
+
+
+* TOC
+{:toc}
+
+
+## Login
 
 - Login using credential given by the administrator
 - After login, assign yourself to the corresponding cutting machine
@@ -47,7 +81,7 @@ title: Cutting Process
 
 ![Picture7](images/Picture7.png)
 
-## Loading Material:
+## Loading Material
 
 - “Material loaded” means material is already loaded on the machine and ready to go
 - Start by pushing button on the machine and in the same instance, click “Material Loaded” from the program
@@ -67,7 +101,7 @@ title: Cutting Process
 ![Picture9](images/Picture9.png)
 ![Picture10](images/Picture10.png)
 
-## Completed Process:
+## Completed Process
 
 - Once the cutting task is completed, the program will display results to choose for the cutting task.
 - RESULTS:
@@ -82,7 +116,7 @@ title: Cutting Process
 
 ![Picture12](images/Picture12.png)
 
-## Quality Control:
+## Quality Control
 
 - Quality Control is one of the most important steps in this process
 - Make sure label matches Panel number
@@ -99,7 +133,7 @@ title: Cutting Process
 
 ![Picture14](images/Picture14.png)
 
-## Advanced Cutting:
+## Advanced Cutting
 
 - To assign multiple machines to do multiple tasks at once, click on name profile in top right corner of the program and assign to multiple cutting machines.
     - This also allows one to go back and forth between all assigned machines
