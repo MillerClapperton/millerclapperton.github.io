@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Fabrication SOP
-permalink: /Fabrication SOP/
+#permalink: /PanelComplete/Fabrication SOP/
 ---
 
-# millerclapperton.github.io
 MillerClapperton Documentation

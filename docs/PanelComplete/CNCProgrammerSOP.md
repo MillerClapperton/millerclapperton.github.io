@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CNC Programmer SOP
-permalink: /CNC Programmer SOP/
+#permalink: /PanelComplete/CNC Programmer SOP/
 ---
 
 # PanelComplete CNC Programmer SOP 
