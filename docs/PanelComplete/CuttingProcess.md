@@ -4,10 +4,6 @@ title: Cutting Process
 #permalink: /PanelComplete/Cutting Process/
 ---
 
-PanelComplete
-
-# Cutting Process
-
 ## Login:
 
 - Login using credential given by the administrator
