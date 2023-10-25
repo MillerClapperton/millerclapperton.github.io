@@ -115,6 +115,6 @@ title: Cutting Process
 - Follow each task as directed and do not click ahead of the assigned task
     - This causes error within the program
 - Slow down and go by the manual. This will make the program and process go smoothly
-- If material has not been properly laid out and reserved in the program correctly, once completed you will NOT have the opportunity to add more.
+- If material has not been properly laid out and reserved in the program correctly, once completed you will <span style="color: red">NOT</span> have the opportunity to add more.
 - Done tasks will show at the bottom of the task list
 - <span style="color: red">DO NOT RUSH THROUGH THE PROGRAM PROCESS!!</span>
