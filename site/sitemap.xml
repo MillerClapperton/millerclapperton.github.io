@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/jekyll/update/2023/10/24/welcome-to-jekyll.html</loc>
+<lastmod>2023-10-24T11:15:34-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/PanelComplete/CNCProgrammerSOP.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/PanelComplete/CuttingProcess.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/PanelComplete/CuttingSOP.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/PanelComplete/FabricationSOP.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/Engineering/NamingStandards.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/PanelComplete/API/Projecting.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+</urlset>
