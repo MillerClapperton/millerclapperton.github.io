@@ -1,6 +1,13 @@
-theme: minima
-logo: /assets/images/logo.png
 title: Documentation - main page
 description: Official company documentations
 markdown: kramdown
-permalink: /:path/:title/
+collections:
+  docs:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+theme: minima

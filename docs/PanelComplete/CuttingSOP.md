@@ -1,33 +1,7 @@
 ---
 layout: post
 title: Cutting SOP
-#permalink: /PanelComplete/Cutting SOP/
 ---
-
-<style>
-/* styles.css */
-#markdown-toc {
-background-color: #f8ffef; /* светло-зеленый фон */
-border: 1px solid #ccc; /* серая рамка */
-padding: 1em; /* внутренний отступ */
-margin: 1em 0; /* внешний отступ сверху и снизу */
-border-radius: 8px; /* закругленные углы */
-list-style: none;
-}
-#markdown-toc li {
-margin: 0; /* убирает отступы у списка */
-
-}
-
-#markdown-toc:before{
-content: 'Outlines';
-color: yellowgreen;
-font-family: Roboto;
-display: flex;
-justify-content: center;
-}
-</style>
-
 
 * TOC
 {:toc}
