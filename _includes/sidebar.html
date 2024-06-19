@@ -1,0 +1,32 @@
+<header>
+    {% include header.html %}
+</header>
+
+<div>
+    <ul>
+
+        {% for category in site.data.docs %}
+        <li>
+            <a href="#">{{ category.title }}</a>
+            {% if category.items %}
+            <ul>
+                {% for item in category.items %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                    {% if item.items %}
+                    <ul>
+                        {% for subitem in item.items %}
+                        <li>
+                            <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
