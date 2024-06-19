@@ -1,0 +1,13 @@
+{% for item in items %}
+  {% if item.type == 'directory' %}
+    <h3 class="accordion-header accordion-header-level-{{ level }}">{{ item.title }}</h3>
+    <div class="accordion-content">
+      <ul>
+        {% assign new_level = level | plus: 1 %}
+        {% include navigation.html items=item.items level=new_level %}
+      </ul>
+    </div>
+  {% else %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+  {% endif %}
+{% endfor %}
