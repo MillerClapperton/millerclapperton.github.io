@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projecting API</title>
+  <title>About</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <img src="/assets/images/logo.png" alt="Documentation - main page"
              style="height: 50px; vertical-align: middle;">
 <!--        Documentation - main page-->
-        </a><!--<nav class="site-nav">
+        </a><!--<nav class="build-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
             <label for="nav-trigger">
           <span class="menu-icon">
@@ -98,95 +98,32 @@
 
   </aside>
   <main class="main-content">
-    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Projecting API</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="" itemprop="datePublished">
-      </time></p>
+    <h1 class="post-title">About</h1>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="markdown-toc">
-  <li><a href="#api-documentation" id="markdown-toc-api-documentation">API Documentation</a>    <ul>
-      <li><a href="#projectviewset" id="markdown-toc-projectviewset">ProjectViewSet</a>        <ul>
-          <li><a href="#retrieve-project-by-project-number" id="markdown-toc-retrieve-project-by-project-number">Retrieve Project by Project Number</a></li>
-          <li><a href="#list-projects" id="markdown-toc-list-projects">List Projects</a></li>
-          <li><a href="#retrieve-active-projects" id="markdown-toc-retrieve-active-projects">Retrieve Active Projects</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+  <div class="post-content">
+    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
 
-<h1 id="api-documentation">API Documentation</h1>
+<p>You can find the source code for Minima at GitHub:
+<a href="https://github.com/jekyll">jekyll</a> /
+<a href="https://github.com/jekyll/minima">minima</a></p>
 
-<h2 id="projectviewset">ProjectViewSet</h2>
+<p>You can find the source code for Jekyll at GitHub:
+<a href="https://github.com/jekyll">jekyll</a> /
+<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
 
-<h3 id="retrieve-project-by-project-number">Retrieve Project by Project Number</h3>
-<p>Retrieve a detailed project by its project number.</p>
 
-<ul>
-  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/{project_number}/</code></li>
-  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
-  <li><strong>Params</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">project_number</code> (required): The unique number identifying the project.</li>
-    </ul>
-  </li>
-  <li><strong>Responses</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns the project details.</li>
-      <li><code class="language-plaintext highlighter-rouge">404 Not Found</code>: If the project with the given project number does not exist.</li>
-    </ul>
-  </li>
-</ul>
+  </div>
 
-<h3 id="list-projects">List Projects</h3>
-<p>List all projects or filter projects based on query parameters.</p>
-
-<ul>
-  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
-  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
-  <li><strong>Query Params</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">fm</code> (optional): Filters projects with unscheduled releases.</li>
-      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
-    </ul>
-  </li>
-  <li><strong>Responses</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of projects.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="retrieve-active-projects">Retrieve Active Projects</h3>
-<p>Retrieve active projects with related data.</p>
-
-<ul>
-  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
-  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
-  <li><strong>Query Params</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
-    </ul>
-  </li>
-  <li><strong>Responses</strong>:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of active projects.</li>
-    </ul>
-  </li>
-</ul>
-
-  </div><a class="u-url" href="/docs/PanelComplete/API/Projecting.html" hidden></a>
 </article>
 
   </main>
 </div>
 <!--<footer>-->
-<!--  <footer class="site-footer h-card">
+<!--  <footer class="build-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">

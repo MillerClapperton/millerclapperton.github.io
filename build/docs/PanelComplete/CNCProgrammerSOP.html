@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Jekyll!</title>
+  <title>CNC Programmer SOP</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <img src="/assets/images/logo.png" alt="Documentation - main page"
              style="height: 50px; vertical-align: middle;">
 <!--        Documentation - main page-->
-        </a><!--<nav class="site-nav">
+        </a><!--<nav class="build-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
             <label for="nav-trigger">
           <span class="menu-icon">
@@ -101,39 +101,90 @@
     <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Welcome to Jekyll!</h1>
+    <h1 class="post-title p-name" itemprop="name headline">CNC Programmer SOP</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2023-10-24T11:15:34-04:00" itemprop="datePublished">Oct 24, 2023
+      <time class="dt-published" datetime="" itemprop="datePublished">
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <ul id="markdown-toc">
+  <li><a href="#adding-releases" id="markdown-toc-adding-releases">Adding Releases</a></li>
+  <li><a href="#creating-programming-tasks" id="markdown-toc-creating-programming-tasks">Creating Programming Tasks</a></li>
+  <li><a href="#programming-cutting-tasks" id="markdown-toc-programming-cutting-tasks">Programming Cutting Tasks</a></li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="adding-releases">Adding Releases</h2>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<ul>
+  <li>Click “Projecting” from top menu bar</li>
+  <li>Choose and click project</li>
+  <li>Choose and click release</li>
+  <li>Check if listed parts are correct and complete</li>
+  <li>If no, contact Engineering</li>
+  <li>If yes, click “add panels”</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="creating-programming-tasks">Creating Programming Tasks</h2>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ul>
+  <li>Click “Scheduling” from top menu bar</li>
+  <li>Choose project from dropdown</li>
+  <li>Choose release, department, and worker from dropdown</li>
+  <li>Click “add task”</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="programming-cutting-tasks">Programming Cutting Tasks</h2>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<ol>
+  <li>Locate task by project and release, and click corresponding number in “ID” column</li>
+  <li>Does this task include multiple release?
+    <ul>
+      <li>If no, skip to step 4</li>
+      <li>If yes, go to step 3</li>
+    </ul>
+  </li>
+  <li>Click “0. Combine”
+    <ul>
+      <li>Select additional releases</li>
+      <li>Click “Combine” button below releases</li>
+    </ul>
+  </li>
+  <li>Click “1. File operations”
+    <ul>
+      <li>Is “DWG” highlighted in green?
+        <ul>
+          <li>If yes, skip to step 5</li>
+          <li>If no, select “DWG” box and click “Copy/overwrite files” button</li>
+        </ul>
+      </li>
+      <li>Confirm “DWG” is now highlighted in green</li>
+    </ul>
+  </li>
+  <li>Click “2. Spreadsheet”
+    <ul>
+      <li>Confirm drawing, quantity, and panel totals at bottom match PanelBuilder totals</li>
+      <li>Optional: Click “2. Spreadsheet” again to collapse it</li>
+    </ul>
+  </li>
+  <li>Click “3. Nesting”
+    <ul>
+      <li><u>Make sure you have completed corresponding work in PanelBuilder</u></li>
+      <li>Click “Parse PanelBuilder release folder”</li>
+      <li>Check keys and parts of generated drawings</li>
+      <li>Click “add to db” button at bottom</li>
+    </ul>
+  </li>
+</ol>
 
 
-  </div><a class="u-url" href="/jekyll/update/2023/10/24/welcome-to-jekyll.html" hidden></a>
+  </div><a class="u-url" href="/docs/PanelComplete/CNCProgrammerSOP.html" hidden></a>
 </article>
 
   </main>
 </div>
 <!--<footer>-->
-<!--  <footer class="site-footer h-card">
+<!--  <footer class="build-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">

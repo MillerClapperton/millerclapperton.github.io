@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabrication SOP</title>
+  <title>Projecting API</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <img src="/assets/images/logo.png" alt="Documentation - main page"
              style="height: 50px; vertical-align: middle;">
 <!--        Documentation - main page-->
-        </a><!--<nav class="site-nav">
+        </a><!--<nav class="build-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
             <label for="nav-trigger">
           <span class="menu-icon">
@@ -101,7 +101,7 @@
     <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Fabrication SOP</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Projecting API</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="" itemprop="datePublished">
       </time></p>
@@ -109,80 +109,84 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="markdown-toc">
-  <li><a href="#fabricator-starts" id="markdown-toc-fabricator-starts">Fabricator Starts</a></li>
-  <li><a href="#solo-fabrication" id="markdown-toc-solo-fabrication">Solo Fabrication</a></li>
-  <li><a href="#team-fabrication" id="markdown-toc-team-fabrication">Team Fabrication</a></li>
-  <li><a href="#fabricator-stops" id="markdown-toc-fabricator-stops">Fabricator Stops</a></li>
-  <li><a href="#questions" id="markdown-toc-questions">Questions</a></li>
+  <li><a href="#api-documentation" id="markdown-toc-api-documentation">API Documentation</a>    <ul>
+      <li><a href="#projectviewset" id="markdown-toc-projectviewset">ProjectViewSet</a>        <ul>
+          <li><a href="#retrieve-project-by-project-number" id="markdown-toc-retrieve-project-by-project-number">Retrieve Project by Project Number</a></li>
+          <li><a href="#list-projects" id="markdown-toc-list-projects">List Projects</a></li>
+          <li><a href="#retrieve-active-projects" id="markdown-toc-retrieve-active-projects">Retrieve Active Projects</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="fabricator-starts">Fabricator Starts</h2>
-<p><em>(shift begins, returns from lunch, comes from other department, etc.)</em></p>
+<h1 id="api-documentation">API Documentation</h1>
 
-<ol>
-  <li>Lead Man distributes iPad</li>
-  <li>Fabricator logs in to PanelComplete &amp; Lead Man confirms</li>
-  <li>Fabricator assigns himself to table &amp; Lead Man confirms</li>
-</ol>
+<h2 id="projectviewset">ProjectViewSet</h2>
 
-<h2 id="solo-fabrication">Solo Fabrication</h2>
+<h3 id="retrieve-project-by-project-number">Retrieve Project by Project Number</h3>
+<p>Retrieve a detailed project by its project number.</p>
 
-<ol>
-  <li>Fabricator selects “Take this part” when he takes panel
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/{project_number}/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Params</strong>:
     <ul>
-      <li>will differ when fabricating multiple panels at once</li>
+      <li><code class="language-plaintext highlighter-rouge">project_number</code> (required): The unique number identifying the project.</li>
     </ul>
   </li>
-  <li>Fabricator selects “Part completed” when he completes panel</li>
-  <li>Lead Man selects “Pass,” “Fail,” or “Hold Back” for each completed panel
+  <li><strong>Responses</strong>:
     <ul>
-      <li>Timing unimportant</li>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns the project details.</li>
+      <li><code class="language-plaintext highlighter-rouge">404 Not Found</code>: If the project with the given project number does not exist.</li>
     </ul>
   </li>
-</ol>
+</ul>
 
-<h2 id="team-fabrication">Team Fabrication</h2>
+<h3 id="list-projects">List Projects</h3>
+<p>List all projects or filter projects based on query parameters.</p>
 
-<ol>
-  <li>Lead Man creates “Team” before anyone starts working
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Query Params</strong>:
     <ul>
-      <li>Lead Man assigns fabricators to team before each starts working</li>
-      <li>Lead Man removes fabricators from team as soon as each stops working</li>
-      <li>Lead man must stop what he is doing when team adds or loses a member</li>
+      <li><code class="language-plaintext highlighter-rouge">fm</code> (optional): Filters projects with unscheduled releases.</li>
+      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
     </ul>
   </li>
-  <li>Team members select “Take this part” and “Part completed” as with Solo Fabrication</li>
-  <li>Lead Man selects “Pass,” “Fail,” or “Hold Back” for each completed panel
+  <li><strong>Responses</strong>:
     <ul>
-      <li>Timing unimportant</li>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of projects.</li>
     </ul>
   </li>
-  <li>Lead Man disbands “Team” as soon as team stops working</li>
-</ol>
+</ul>
 
-<h2 id="fabricator-stops">Fabricator Stops</h2>
-<p><em>(shift ends, lunch begins, assigned non fabrication task, returns to other department, etc.)</em></p>
+<h3 id="retrieve-active-projects">Retrieve Active Projects</h3>
+<p>Retrieve active projects with related data.</p>
 
-<ol>
-  <li>Fabricator logs out of PanelComplete &amp; Lead Man confirms</li>
-  <li>Lead Man collects iPad</li>
-</ol>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Query Params</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
+    </ul>
+  </li>
+  <li><strong>Responses</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of active projects.</li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="questions">Questions</h2>
-
-<ol>
-  <li>Training</li>
-  <li>Forgotten login credentials</li>
-  <li>No login credentials / Lack of access to fabrication</li>
-</ol>
-
-  </div><a class="u-url" href="/docs/PanelComplete/FabricationSOP.html" hidden></a>
+  </div><a class="u-url" href="/docs/PanelComplete/API/Projecting.html" hidden></a>
 </article>
 
   </main>
 </div>
 <!--<footer>-->
-<!--  <footer class="site-footer h-card">
+<!--  <footer class="build-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
