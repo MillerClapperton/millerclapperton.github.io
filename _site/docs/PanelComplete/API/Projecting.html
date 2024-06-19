@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecting API</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <header>
+    <header class="site-header" role="banner">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/">
+        <img src="/assets/images/logo.png" alt="Documentation - main page"
+             style="height: 50px; vertical-align: middle;">
+<!--        Documentation - main page-->
+        </a><!--<nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+            <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+            </label>
+
+            <div class="trigger"><a class="page-link" href="/docs/PanelComplete/CNCProgrammerSOP.html">CNC Programmer SOP</a><a class="page-link" href="/docs/PanelComplete/CuttingProcess.html">Cutting Process</a><a class="page-link" href="/docs/PanelComplete/CuttingSOP.html">Cutting SOP</a><a class="page-link" href="/docs/PanelComplete/FabricationSOP.html">Fabrication SOP</a><a class="page-link" href="/docs/Engineering/NamingStandards.html">Naming Standards</a><a class="page-link" href="/docs/PanelComplete/API/Projecting.html">Projecting API</a><a class="page-link" href="/about/">About</a></div>
+        </nav>--></div>
+</header>
+
+</header>
+
+<div>
+    <ul>
+
+        
+        <li>
+            <a href="#">PanelComplete</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="/docs/PanelComplete/CNCProgrammerSOP.html">CNC Programmer SOP</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/docs/PanelComplete/CuttingProcess.html">Cutting Process</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/docs/PanelComplete/CuttingSOP.html">Cutting SOP</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/docs/PanelComplete/FabricationSOP.html">Fabrication SOP</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="">API</a>
+                    
+                    <ul>
+                        
+                        <li>
+                            <a href="/docs/PanelComplete/API/Projecting.html">Projecting API</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+        <li>
+            <a href="#">Engineering</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="/docs/Engineering/NamingStandards.html">Naming Standards</a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+</div>
+
+  </aside>
+  <main class="main-content">
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Projecting API</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="" itemprop="datePublished">
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="markdown-toc">
+  <li><a href="#api-documentation" id="markdown-toc-api-documentation">API Documentation</a>    <ul>
+      <li><a href="#projectviewset" id="markdown-toc-projectviewset">ProjectViewSet</a>        <ul>
+          <li><a href="#retrieve-project-by-project-number" id="markdown-toc-retrieve-project-by-project-number">Retrieve Project by Project Number</a></li>
+          <li><a href="#list-projects" id="markdown-toc-list-projects">List Projects</a></li>
+          <li><a href="#retrieve-active-projects" id="markdown-toc-retrieve-active-projects">Retrieve Active Projects</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="api-documentation">API Documentation</h1>
+
+<h2 id="projectviewset">ProjectViewSet</h2>
+
+<h3 id="retrieve-project-by-project-number">Retrieve Project by Project Number</h3>
+<p>Retrieve a detailed project by its project number.</p>
+
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/{project_number}/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Params</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">project_number</code> (required): The unique number identifying the project.</li>
+    </ul>
+  </li>
+  <li><strong>Responses</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns the project details.</li>
+      <li><code class="language-plaintext highlighter-rouge">404 Not Found</code>: If the project with the given project number does not exist.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="list-projects">List Projects</h3>
+<p>List all projects or filter projects based on query parameters.</p>
+
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Query Params</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">fm</code> (optional): Filters projects with unscheduled releases.</li>
+      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
+    </ul>
+  </li>
+  <li><strong>Responses</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of projects.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="retrieve-active-projects">Retrieve Active Projects</h3>
+<p>Retrieve active projects with related data.</p>
+
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">/api/projects/</code></li>
+  <li><strong>Method</strong>: <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><strong>Query Params</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">active_list</code> (optional): Filters active projects.</li>
+    </ul>
+  </li>
+  <li><strong>Responses</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">200 OK</code>: Returns a list of active projects.</li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/docs/PanelComplete/API/Projecting.html" hidden></a>
+</article>
+
+  </main>
+</div>
+<!--<footer>-->
+<!--  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Documentation - main page</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Documentation - main page</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Official company documentations</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+-->
+<!--</footer>-->
+</body>
+</html>
